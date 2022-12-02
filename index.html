@@ -36,6 +36,16 @@
             background-color: white;
             width: 8vw;
         }
+
+        /* @media only screen and (max-width: 600px) {
+            carousel-control-prev {
+                margin-left: -11vw;
+            }
+
+            carousel-control-next {
+                margin-right: -11vw;
+            }
+        } */
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
@@ -79,6 +89,18 @@
             });
             $(".bookmark4").click(function () {
                 $(".card4").clone().appendTo("#ocb");
+            });
+            $(".bookmark5").click(function () {
+                $(".card5").clone().appendTo("#ocb");
+            });
+            $(".bookmark6").click(function () {
+                $(".card6").clone().appendTo("#ocb");
+            });
+            $(".bookmark7").click(function () {
+                $(".card7").clone().appendTo("#ocb");
+            });
+            $(".bookmark8").click(function () {
+                $(".card8").clone().appendTo("#ocb");
             });
         });
     </script>
@@ -142,14 +164,14 @@
         <div class="container-sm">
             <div class="row align-items-center">
                 <div class="col-sm-7">
-                    <h1>Welcome to SOI Learning Portal</h1>
+                    <h1 style="margin-top: 10vh;">Welcome to SOI Learning Portal</h1>
                     <p>Expertly crafted courses that best fit your learning needs and preferences.</p>
-                    <button type="button" class="btn btn-success">Browse Courses</button>
-                    <button type="button" class="btn btn-light">Be An Instructor</button>
+                    <button type="button" class="btn btn-success" style="margin-bottom: 10vh;">Browse Courses</button>
+                    <button type="button" class="btn btn-light" style="margin-bottom: 10vh;">Be An Instructor</button>
                 </div>
 
                 <div class="col-sm-5">
-                    <img src="images/tech.png" class="img-fluid" />
+                    <img src="images/tech.png" class="img-fluid"/>
                 </div>
             </div>
         </div>
@@ -264,7 +286,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="margin-bottom: 50px;">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="margin-bottom: 100px;">
                                 <div class="card card4">
                                     <img src="images/card4.jpg" class="card-img-top">
                                     <div class="card-body">
@@ -288,54 +310,74 @@
                     <div class="carousel-item">
                         <div class="row">
                             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="margin-bottom: 20px;">
-                                <div class="card">
+                                <div class="card card5">
                                     <img src="images/card2.jpg" class="card-img-top">
                                     <div class="card-body">
                                         <h5 class="card-title">User Experience and Interface Design</h5><br>
                                         <p class="card-text"><i class="bi bi-clock"></i> 2h 45m</p>
                                     </div>
                                     <div class="card-footer"><i class="fa-solid fa-circle-user"></i>&nbsp&nbsp Julia
-                                        Lee<i class="bi bi-bookmark-fill" style="position: absolute; right:5%"
-                                            data-bs-toggle="tooltip" title="Add to Bookmarks"></i></div>
+                                        Lee<button class="btn position-absolute end-0 bookmark5" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                            aria-controls="offcanvasRight" style="padding: 0; margin-right:5%;">
+                                            <i class="bi bi-bookmark-fill" data-bs-toggle="tooltip"
+                                                title="Add to Bookmarks">
+                                            </i>
+                                        </button></div>
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="margin-bottom: 50px;">
-                                <div class="card">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="margin-bottom: 20px;">
+                                <div class="card card6">
                                     <img src="images/card4.jpg" class="card-img-top">
                                     <div class="card-body">
                                         <h5 class="card-title">Front-end JavaScript Frameworks</h5><br>
                                         <p class="card-text"><i class="bi bi-clock"></i> 3h 45m</p>
                                     </div>
                                     <div class="card-footer"><i class="fa-solid fa-circle-user"></i>&nbsp&nbsp Azhar
-                                        Kamar<i class="bi bi-bookmark-fill" style="position: absolute; right:5%"
-                                            data-bs-toggle="tooltip" title="Add to Bookmarks"></i></div>
+                                        Kamar<button class="btn position-absolute end-0 bookmark6" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                            aria-controls="offcanvasRight" style="padding: 0; margin-right:5%;">
+                                            <i class="bi bi-bookmark-fill" data-bs-toggle="tooltip"
+                                                title="Add to Bookmarks">
+                                            </i>
+                                        </button></div>
                                 </div>
                             </div>
 
                             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="margin-bottom: 20px;">
-                                <div class="card">
+                                <div class="card card7">
                                     <img src="images/card3.jpg" class="card-img-top">
                                     <div class="card-body">
                                         <h5 class="card-title">iOS App Development using Xcode and Swift</h5><br>
                                         <p class="card-text"><i class="bi bi-clock"></i> 4h 30m</p>
                                     </div>
                                     <div class="card-footer"><i class="fa-solid fa-circle-user"></i>&nbsp&nbsp Ryan
-                                        Low<i class="bi bi-bookmark-fill" style="position: absolute; right:5%"
-                                            data-bs-toggle="tooltip" title="Add to Bookmarks"></i></div>
+                                        Low<button class="btn position-absolute end-0 bookmark7" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                            aria-controls="offcanvasRight" style="padding: 0; margin-right:5%;">
+                                            <i class="bi bi-bookmark-fill" data-bs-toggle="tooltip"
+                                                title="Add to Bookmarks">
+                                            </i>
+                                        </button></div>
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="margin-bottom: 20px;">
-                                <div class="card">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="margin-bottom: 100px;">
+                                <div class="card card8">
                                     <img src="images/card1.jpg" class="card-img-top">
                                     <div class="card-body">
                                         <h5 class="card-title">Introduction to HTML and CSS</h5><br>
                                         <p class="card-text"><i class="bi bi-clock"></i> 2h 30m</p>
                                     </div>
                                     <div class="card-footer"><i class="fa-solid fa-circle-user"></i>&nbsp&nbsp Hannah
-                                        Lim<i class="bi bi-bookmark-fill" style="position: absolute; right:5%"
-                                            data-bs-toggle="tooltip" title="Add to Bookmarks"></i></div>
+                                        Lim<button class="btn position-absolute end-0 bookmark8" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                            aria-controls="offcanvasRight" style="padding: 0; margin-right:5%;">
+                                            <i class="bi bi-bookmark-fill" data-bs-toggle="tooltip"
+                                                title="Add to Bookmarks">
+                                            </i>
+                                        </button></div>
                                 </div>
                             </div>
                         </div>
@@ -343,12 +385,12 @@
                 </div>
 
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
+                    data-bs-slide="prev" style="margin-left: -10vw;">
                     <span class="carousel-control-prev-icon" aria-hidden="false"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
+                    data-bs-slide="next" style="margin-right: -10vw;">
                     <span class="carousel-control-next-icon" aria-hidden="false"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
@@ -380,7 +422,8 @@
 
 </body>
 
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" data-bs-scroll="true" data-bs-backdrop="false">
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel"
+    data-bs-scroll="true" data-bs-backdrop="false">
     <div class="offcanvas-header">
         <h5 id="offcanvasRightLabel">Offcanvas right</h5>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
